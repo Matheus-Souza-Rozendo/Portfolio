@@ -30,7 +30,7 @@ multi-checkbox {
     --mc-target-padding: 0px 0px 0px 3px;
     --mc-target-outline: none;
     --mc-vertical-align: middle;
-    --mc-target-width: 175px;
+    --mc-target-width: 160px;
 
     /* Dropdown Line Items */
     --mc-dropdown-color: #000000;

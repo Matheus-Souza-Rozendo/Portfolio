@@ -21,53 +21,6 @@
      <link rel="stylesheet" href="css/tooplate-ben-resume-style.css">
      <link rel="stylesheet" href="css/custom.css">
      <script type="module" src="https://www.unpkg.com/multi-checkbox/multi-checkbox.js"></script>
-
-     <style>
-       
-
-        .form-group {
-            margin-right: 20px;
-        }
-
-        label {
-            margin-right: 10px;
-            color: white;
-        }
-
-        select {
-            width: 150px;
-        }
-
-        .btn-primary {
-            background-color: white;
-            color: black;
-            border: 1px solid white;
-            padding: 10px 20px;
-            border-radius: 10px;
-            cursor: pointer;
-        }
-
-        .btn-primary:hover {
-            background-color: rgba(255,255,255,0.75);
-            border: 1px solid rgb(200,200,200);
-            color:black
-        }
-        #filtro{
-            padding:20px;
-            padding-bottom: 30px;
-            background-color: #212529;
-            position: fixed;
-            width: 100%; 
-            min-height: max-content;
-        }
-
-        @media (max-width: 575px) {
-            /* Adicione uma regra de mídia para telas menores que 768px */
-            .form-group{
-                margin-bottom:0px !important;
-            }
-        }
-     </style>
 </head>
 
 <body data-spy="scroll" data-target="#navbarNav" data-offset="50" style="background-color: rgba(236, 235, 235, 0.473);">
@@ -76,8 +29,8 @@
     <script src="js/scripts/header.js"></script>
 <!-- Fim do MENU-->
 <main class="container-fluid" style="min-height: 100vh;">
-    <div class="row">
-        <div class="col d-flex justify-content-between align-items-center" id="filtro">
+    <div class="row" id="filtro">
+        <div class="col d-flex justify-content-between align-items-center" >
             <!-- Adicionando um formulário para o filtro -->
             <form class="form-inline categorias-details">
                 <label>Categorias</label>
@@ -87,14 +40,76 @@
                         <li>C++</li>
                         <li>Backend</li>
                         <li>Frontend</li>
+                        <li>Javascript</li>
                         <li>Sistemas Embarcados</li>
+                        <li>Eletrônica</li>
                     </ul>
                 </multi-checkbox>
-                
             </form>
             <button type="button" class="btn btn-primary ml-auto" >Filtrar</button>
         </div>
     </div>
+    <div style="padding-top: 200px; display: flex; flex-direction: row; justify-content: space-around; flex-wrap: wrap; position: relative;">
+        <div href="#" class="card-custom">
+            <img src="images/true-agency.jpg" alt="">
+            <p class="text-center card-titulo">Circuito eletrônico para carregamento de pilhas de lítio</p>
+            <div class="text-center"><p class="card-description">Criar um circuito eficiente para carregar pilhas de lítio com solução compacta e integrada.</p></div>
+            <div class="footer-card" style="display: flex; flex-direction: column; align-items: center;" >
+                <div style="margin-bottom: 10px;">
+                    <div class="pils">
+                        <div class="comprimido eletronica">Eletrônica</div>
+                        
+                    </div>
+                </div>
+                <button class="botao-moderno" href="#">Saiba mais</button>
+            </div>
+        </div>
+        <div href="#" class="card-custom">
+            <img src="images/true-agency.jpg" alt="">
+            <p class="text-center card-titulo">Projeto de Comunicação ESP-32</p>
+            <div class="text-center"><p class="card-description">Sistema de sensoriamento sem fio, usando o ESP-32, e a tecnologia BLE, juntamente com o WIFI para enviar informações para uma API na AWS</p></div>
+            <div class="footer-card" style="display: flex; flex-direction: column; align-items: center;" >
+                <div style="margin-bottom: 10px;">
+                    <div class="pils">
+                        <div class="comprimido embarcados">Embarcados</div>
+                        <div class="comprimido cpp">C++</div>
+                        <div class="comprimido python">Python</div>
+                    </div>
+                </div>
+                <button class="botao-moderno">Saiba mais</button>
+            </div>
+        </div>
+        <div href="#" class="card-custom">
+            <img src="images/true-agency.jpg" alt="">
+            <p class="text-center card-titulo">Landing Page Iphone 13 Pro</p>
+            <div class="text-center"><p class="card-description">Landing Page conceitual para o Iphone 13 Pro</p></div>
+            <div class="footer-card" style="display: flex; flex-direction: column; align-items: center;" >
+                <div style="margin-bottom: 10px;">
+                    <div class="pils">
+                        <div class="comprimido frontend">Front-end</div>
+                        <div class="comprimido javascript">javascript</div>
+                    </div>
+                </div>
+                <button class="botao-moderno">Saiba mais</button>
+            </div>
+        </div>
+        <div href="#" class="card-custom">
+            <img src="images/true-agency.jpg" alt="">
+            <p class="text-center card-titulo">Compactador para arquivos .txt</p>
+            <div class="text-center"><p class="card-description">Compactador e descompactador de Arquivos no formato .txt, usando o algoritmo de huffman</p></div>
+            <div class="footer-card" style="display: flex; flex-direction: column; align-items: center;" >
+                <div style="margin-bottom: 10px;">
+                    <div class="pils">
+                        <div class="comprimido cpp">C++</div>
+                        <div class="comprimido backend">Backend</div>
+                    </div>
+                </div>
+                <button class="botao-moderno">Saiba mais</button>
+            </div>
+        </div>
+    </div>
+    </div>
+        
 </main>
 
 

@@ -18,6 +18,7 @@ select {
     padding: 10px 20px;
     border-radius: 10px;
     cursor: pointer;
+    transition: background-color 0.5s; /* Efeito de transição de cor de fundo */
 }
 
 .btn-primary:hover {
@@ -32,6 +33,118 @@ select {
     position: fixed;
     width: 100%; 
     min-height: max-content;
+    z-index: 2000;
+}
+
+
+.card-custom{
+    background-color: rgba(0, 0, 0, 0.05);
+    width: 300px !important;
+    height: 420px !important;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.5);
+    padding:5px;
+    position: relative;
+}
+
+.card-custom img{
+    width: 60%;
+    margin-inline: 20%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.card-custom p{
+    line-height: 1.5em !important;
+    padding-top: 5px;
+    margin-bottom: -2px;
+}
+
+.card-titulo{
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+.card-description{
+    font-size: 15px !important;
+    color: black;
+    font-weight: 400;
+}
+.footer-card{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.pils{
+    display: inline-flex;
+    background-color: rgba(0,0,0,0);
+}
+.comprimido {
+    width: 90px;
+    height: 30px;
+    font-size: 14px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.eletronica{
+    background-color:gray;
+    color: whitesmoke;
+}
+.python{
+    background-color: yellow;
+    color: black;
+}
+.cpp{
+    background-color: blue;
+    color: whitesmoke;
+}
+.embarcados{
+    background-color: black;
+    color: whitesmoke;
+}
+.backend{
+    background-color: black;
+    color: whitesmoke;
+}
+.frontend{
+    background-color: red;
+    color: whitesmoke;
+}
+.javascript{
+    background-color:blueviolet;
+    color: whitesmoke;
+}
+
+.botao-moderno {
+    background-color: black; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    padding: 10px 20px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    text-decoration: none; /* Remove sublinhado padrão */
+    display: inline-block; /* Permite definir largura e altura */
+    font-size: 14px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor ao passar o mouse */
+    border-radius: 8px; /* Borda arredondada */
+    transition: background-color 0.5s; /* Efeito de transição de cor de fundo */
+    width: 200px;
+    
+}
+
+.botao-moderno:hover {
+    background-color: rgb(100,100,100); /* Cor de fundo ao passar o mouse */
 }
 
 @media (max-width: 575px) {
@@ -39,4 +152,5 @@ select {
     .form-group{
         margin-bottom:0px !important;
     }
+
 }
