@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+     <title>Matheus Souza Rozendo - Amante de Tecnologia</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="Site de Portfolio do matheus souza rozendo">
+     <meta name="keywords" content="Portfolio, Matheus,Souza,Rozendo,Backend,Frontend,Embarcados,Controle,Automação,Engenharia">
+     <meta name="author" content="Matheus Souza Rozendo">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/all.min.css">
+     <link rel="stylesheet" href="css/owl.carousel.min.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/multi-checkbox.css">
+     <link rel="stylesheet" href="css/tooplate-ben-resume-style.css">
+     <link rel="stylesheet" href="css/custom.css">
+     <script type="module" src="https://www.unpkg.com/multi-checkbox/multi-checkbox.js"></script>
+
+     <style>
+       
+
+        .form-group {
+            margin-right: 20px;
+        }
+
+        label {
+            margin-right: 10px;
+            color: white;
+        }
+
+        select {
+            width: 150px;
+        }
+
+        .btn-primary {
+            background-color: white;
+            color: black;
+            border: 1px solid white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            background-color: rgba(255,255,255,0.75);
+            border: 1px solid rgb(200,200,200);
+            color:black
+        }
+        #filtro{
+            padding:20px;
+            padding-bottom: 30px;
+            background-color: #212529;
+            position: fixed;
+            width: 100%; 
+            min-height: max-content;
+        }
+
+        @media (max-width: 575px) {
+            /* Adicione uma regra de mídia para telas menores que 768px */
+            .form-group{
+                margin-bottom:0px !important;
+            }
+        }
+     </style>
+</head>
+
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50" style="background-color: rgba(236, 235, 235, 0.473);">
+
+<!-- Inicio do Menu-->
+    <script src="js/scripts/header.js"></script>
+<!-- Fim do MENU-->
+<main class="container-fluid" style="min-height: 100vh;">
+    <div class="row">
+        <div class="col d-flex justify-content-between align-items-center" id="filtro">
+            <!-- Adicionando um formulário para o filtro -->
+            <form class="form-inline categorias-details">
+                <label>Categorias</label>
+                <multi-checkbox separator="," value="">
+                    <ul slot="check-values">
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>Backend</li>
+                        <li>Frontend</li>
+                        <li>Sistemas Embarcados</li>
+                    </ul>
+                </multi-checkbox>
+                
+            </form>
+            <button type="button" class="btn btn-primary ml-auto" >Filtrar</button>
+        </div>
+    </div>
+</main>
+
+
+    <script src="js/scripts/footer.js"></script>
+  
+     <!-- SCRIPTS -->
+     <script src="js/jquery.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/custom.js"></script>
+     <script src="js/scripts/ajustarconteudo.js"></script>
+     
+</body>
+</html>

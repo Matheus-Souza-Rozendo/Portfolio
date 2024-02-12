@@ -1,14 +1,16 @@
 function criarNavbar() {
+    var tituloDaPagina = document.title;
     // Criação dos elementos
     var nav = document.createElement("nav");
     nav.className = "navbar navbar-expand-lg";
+    nav.id = "observado";
 
     var container = document.createElement("div");
     container.className = "container";
 
     var brandLink = document.createElement("a");
     brandLink.className = "navbar-brand";
-    brandLink.href = "/index.html";
+    brandLink.href = "index.html";
     brandLink.textContent = "Matheus Rozendo";
 
     var toggleButton = document.createElement("button");
@@ -31,12 +33,24 @@ function criarNavbar() {
     var ulList = document.createElement("ul");
     ulList.className = "navbar-nav mx-auto";
 
-    var menuItems = [
-        { href: "#intro", text: "Introdução" },
-        { href: "#about", text: "Sobre Mim" },
-        { href: "Projetos.html", text: "Projetos" },
-        { href: "#contact", text: "Contato" }
-    ];
+    var menuItems;
+
+    if(tituloDaPagina!="Matheus Souza Rozendo - Amante de Tecnologia"){
+        menuItems = [
+            { href: "#intro", text: "Introdução" },
+            { href: "#about", text: "Sobre Mim" },
+            { href: "Projetos.html", text: "Projetos" },
+            { href: "#contact", text: "Contato" }
+        ];
+
+    }else{
+        menuItems = [
+            { href: "index.html#intro", text: "Introdução" },
+            { href: "index.html#about", text: "Sobre Mim" },
+            { href: "Projetos.html", text: "Projetos" },
+            { href: "#contact", text: "Contato" }
+        ];
+    }
 
     menuItems.forEach(function (item) {
         var liItem = document.createElement("li");
@@ -81,3 +95,6 @@ function criarNavbar() {
 document.addEventListener("DOMContentLoaded", function() {
     criarNavbar();
 });
+
+
+//scroll

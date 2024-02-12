@@ -1,0 +1,42 @@
+.form-group {
+    margin-right: 20px;
+}
+
+label {
+    margin-right: 10px;
+    color: white;
+}
+
+select {
+    width: 150px;
+}
+
+.btn-primary {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: rgba(255,255,255,0.75);
+    border: 1px solid rgb(200,200,200);
+    color:black
+}
+#filtro{
+    padding:20px;
+    padding-bottom: 30px;
+    background-color: #212529;
+    position: fixed;
+    width: 100%; 
+    min-height: max-content;
+}
+
+@media (max-width: 575px) {
+    /* Adicione uma regra de mídia para telas menores que 768px */
+    .form-group{
+        margin-bottom:0px !important;
+    }
+}

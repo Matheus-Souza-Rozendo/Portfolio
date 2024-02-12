@@ -190,6 +190,10 @@ https://www.tooplate.com/view/2120-ben-resume
     position: fixed;
     opacity: 1;
   }
+   
+  nav:not(.scroll){
+    display: none;
+  }
 
   .navbar-brand {
     color: var(--white-color);
