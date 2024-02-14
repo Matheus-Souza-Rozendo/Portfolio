@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+     <title>Circuito Eletrônico para Carregamento de Pilhas de Lítio</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="Site de Portfolio do matheus souza rozendo">
+     <meta name="keywords" content="Portfolio, Matheus,Souza,Rozendo,Backend,Frontend,Embarcados,Controle,Automação,Engenharia">
+     <meta name="author" content="Matheus Souza Rozendo">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/all.min.css">
+     <link rel="stylesheet" href="css/owl.carousel.min.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/tooplate-ben-resume-style.css">
+     <link rel="stylesheet" href="css/artigos.css">
+</head>
+
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+
+<!-- Inicio do Menu-->
+    <script src="js/scripts/header.js"></script>
+<!-- Fim do MENU-->
+<div class="container">
+    <h1 class="text-center">Circuito Eletrônico para Carregamento de Pilhas de Lítio</h1>
+
+    <div class="alert alert-info" role="alert">
+        Acesse o <a href="https://github.com/Matheus-Souza-Rozendo/circuito-eletronico-para-carregamento-de-pilhas-de-litio">github</a> do projeto   <div class="pils">
+<div class="comprimido eletronica">Eletrônica</div></div>
+    </div>
+
+    <h3>Problema Inicial</h3>
+    <p>Este projeto deriva de uma solução que foi criada para o cliente Dirceu B. Estes dados estão sendo mostrados com a autorização do mesmo</p>
+
+    <h3>Descrição do Projeto</h3>
+    <p>Este projeto busca otimizar a eficiência e reduzir custos ao substituir o uso do Arduino Pro Mini por um circuito dedicado para controlar duas pilhas 18650/3,7V, um voltímetro 2S, um sensor óptico de linha e um micro servo 9g. A proposta inclui a criação de um circuito com saídas específicas para o voltímetro e o servo, além de uma entrada para o sensor, visando simplificação e economia.</p>
+    <p>A integração de um BMS para proteção e carregamento das pilhas, juntamente com uma fonte CFTV 9V/2A, será consolidada em um único PCB bivolt, eliminando a necessidade de fontes externas. Em resumo, o projeto visa promover eficiência energética e redução de custos, destacando-se pela integração de componentes em uma solução coesa e adaptável no cenário de desenvolvimento tecnológico.</p>
+    <!-- Adicione mais conteúdo conforme necessário -->
+
+    <h3>Solução Apresentada</h3>
+    <!-- Adicione mais conteúdo conforme necessário -->
+    <p>O sistema consiste de um servo motor (micro servo 9g) acionado por uma placa eletrônica. A entrada do sistema é um sensor óptico. Os estados do sistemas são os seguintes</p>
+    <p><b>Estado 1:</b> Aguardando Acionamento do sensor - Acionado em 0°</p>
+    <p><b>Estado 2:</b> esperando 1s na posição 0° - Acionado em 0°</p>
+    <p><b>Estado 3:</b> rotacionando para 180° e aguardando 2s - Acionado em 180°</p>
+
+    <div class="card">
+        <img src="https://raw.githubusercontent.com/Matheus-Souza-Rozendo/circuito-eletronico-para-carregamento-de-pilhas-de-litio/main/images/image5.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text">Diagrama de Estados</p>
+        </div>
+    </div>
+    <p>É possível notar pela figura a cima que o servo aguarda o sinal do sensor, depois aguarda 1 segundo sendo acionado na posição 0° e depois durante 3s(1s de deslocamento e 2 aguardando) é acionado na posição 180°.. Logo, vale salientar que não é possível realizar a leitura da posição no qual o servo está , usando uma placa sem microprocessador.</p>
+    <!-- Adicione mais cards conforme necessário -->
+
+    <h3>Controle do Servo Motor</h3>
+    <p>Servomotores tem sua posição controlada variando a largura do pulso PWM, como mostrado na figura</p>
+    <div class="card">
+        <img src="https://raw.githubusercontent.com/Matheus-Souza-Rozendo/circuito-eletronico-para-carregamento-de-pilhas-de-litio/main/images/image7.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text">Diagrama controle servo motores</p>
+        </div>
+    </div>
+    <p>Logo, a solução apresentada foi a criação de um circuito que gerasse sinal pwm com largura de 1ms e 2ms.Além disso, esse circuito deveria ser capaz de alterar entre seus dois estados por um controle digital feito por um circuito lógico combinacional.</p>
+    <p>O circuito resultante é mostrado na figura</p>
+    <div class="card">
+        <img src="https://raw.githubusercontent.com/Matheus-Souza-Rozendo/circuito-eletronico-para-carregamento-de-pilhas-de-litio/main/images/image4.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text">circuito controle servo motores</p>
+        </div>
+    </div>
+    <p>Simulações feitas geraram os seguintes resultados</p>
+    <div class="card">
+        <img src="https://raw.githubusercontent.com/Matheus-Souza-Rozendo/circuito-eletronico-para-carregamento-de-pilhas-de-litio/main/images/image1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text">Sinal gerado colocando 6V na entrada 0°</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://raw.githubusercontent.com/Matheus-Souza-Rozendo/circuito-eletronico-para-carregamento-de-pilhas-de-litio/main/images/image8.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text">Sinal Gerado colocando 6V na entrada 180°</p>
+        </div>
+    </div>
+    <h3>Circuito Timer</h3>
+    <!-- Adicione mais conteúdo conforme necessário -->
+    <p>Como discutido anteriormente, a transição do estado 1 para o estado 2 e do estado 2 para o estado 3 será feita utilizando-se do sinal proveniente de timers. Por isso, foi construído um circuito no qual um timer 555 no modo monoestável é acionado por um transistor e libera um sinal para a saída de 1 ou 3 segundos a depender da configuração de resistores utilizados.</p>
+    <div class="card">
+        <img src="https://raw.githubusercontent.com/Matheus-Souza-Rozendo/circuito-eletronico-para-carregamento-de-pilhas-de-litio/main/images/image6.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text">circuito timer</p>
+        </div>
+    </div>
+    <p>Segue os resultados dos testes com esses circuitos</p>
+    <div class="card">
+        <img src="https://raw.githubusercontent.com/Matheus-Souza-Rozendo/circuito-eletronico-para-carregamento-de-pilhas-de-litio/main/images/image3.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text">Timer de 1s - R1 de 900 KΩ</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://raw.githubusercontent.com/Matheus-Souza-Rozendo/circuito-eletronico-para-carregamento-de-pilhas-de-litio/main/images/image2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text">Timer de 3s - R1 de 2.7 MΩ</p>
+        </div>
+    </div>
+    <!-- Adicione mais conteúdo conforme necessário -->
+
+    <h3>Circuito Digital</h3>
+    <p>Segue o link para baixar a simulação feita no software circuitMaker:     <a href="https://github.com/Matheus-Souza-Rozendo/circuito-eletronico-para-carregamento-de-pilhas-de-litio/blob/main/circuito%20logico.CKT" target="_blank">Circuito Digital</a>
+    </p>
+
+    <!-- Adicione mais conteúdo conforme necessário -->
+
+    <h3>Fonte AC/DC para carregar pilhas</h3>
+    <!-- Adicione mais conteúdo conforme necessário -->
+    <p>O circuito conversor AC/DC segue a linha de uma fonte linear regulada. Sua tensão de entrada é 12V AC. Por isso se faz necessário um transformador 220V para 12V.</p>
+    <p>A entrada da placa deve ser ligada nos terminais corretos do transformador.</p>
+    <p>O transformador recomendado é o <a href="https://m.pt.aliexpress.com/item/4000042064306.html?gatewayAdapt=Pc2Msite">Mini Transformador De Energia Ei, Transformador De 220v, 6v, 9v, 12v, 15v, 24v, Entrada Dupla, 12v, 2w, Va - Transformadores - AliExpress.</a> </p>
+    <p>Qualquer outro transformador pode ser usado na instalação desde que seja com saída de 12V AC.</p>
+    <p>É utilizado também um módulo BMS 2S 3A para proteção das baterias de lítio.</p>
+    <p>Segue o esquema do circuito na figura</p>
+    <div class="card">
+        <img src="https://raw.githubusercontent.com/Matheus-Souza-Rozendo/circuito-eletronico-para-carregamento-de-pilhas-de-litio/main/images/image9.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text">circuito carregamento de pilhas de litio</p>
+        </div>
+    </div>
+    <!-- Adicione mais conteúdo conforme necessário -->
+
+    <h3>Recomendações</h3>
+    <ul>
+        <li>Não usar enquanto estiver conectado na tomada para evitar sobrecarga.</li>
+        <li>Utilizar resistores e capacitores com o menor grau de erro possível.</li>
+        <li>Conectar de forma adequada e conforme escrito na placa e no modelo.</li>
+    </ul>
+
+</div>
+
+
+
+
+    <script src="js/scripts/footer.js"></script>
+  
+     <!-- SCRIPTS -->
+     <script src="js/jquery.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/custom.js"></script>
+
+</body>
+</html>

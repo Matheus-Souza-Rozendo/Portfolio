@@ -1,0 +1,74 @@
+body {
+    background-color: #f8f9fa;
+}
+
+body > .container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+img {
+    max-width: 100%;
+    height: auto;
+    max-height: 60vh;
+    object-fit: contain;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card-text{
+    text-align: center;
+}
+
+.pils{
+    display: inline-flex;
+}
+.comprimido {
+    width: 90px;
+    height: 30px;
+    font-size: 14px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.eletronica{
+    background-color:gray;
+    color: whitesmoke;
+}
+.python{
+    background-color: yellow;
+    color: black;
+}
+.cpp{
+    background-color: blue;
+    color: whitesmoke;
+}
+.embarcados{
+    background-color: black;
+    color: whitesmoke;
+}
+.backend{
+    background-color: black;
+    color: whitesmoke;
+}
+.frontend{
+    background-color: red;
+    color: whitesmoke;
+}
+.javascript{
+    background-color:blueviolet;
+    color: whitesmoke;
+}
+
+h1{
+    padding-bottom: 10px;
+}
