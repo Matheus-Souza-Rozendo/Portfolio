@@ -1,0 +1,36 @@
+{
+    "Projetos":[{
+        "id":1,
+        "imagem":"images/destaque_circuito_carregamento_pilha.png",
+        "nome":"Circuito eletrônico para carregamento de pilhas de lítio",
+        "descricao":"Criar um circuito eficiente para carregar pilhas de lítio com solução compacta e integrada.",
+        "categorias":["eletrônica"],
+        "link":"circuito_carregamento_pilha_de_litio.html"
+    },
+    {
+        "id":2,
+        "imagem":"images/destaque_esp32.png",
+        "nome":"Projeto de Comunicação ESP-32",
+        "descricao":"Sistema de sensoriamento sem fio, usando o ESP-32, e a tecnologia BLE, juntamente com o WIFI para enviar informações para uma API na AWS",
+        "categorias":["Embarcados","C++","Python"],
+        "link":"comunicacao_esp32.html"
+    },
+    {
+        "id":3,
+        "imagem":"images/destaque_iphone.png",
+        "nome":"Landing Page Iphone 13 Pro",
+        "descricao":"Landing Page conceitual para o Iphone 13 Pro",
+        "categorias":["FrontEnd","javascript"],
+        "link":"https://matheus-souza-rozendo.github.io/Landing-Page-Iphone-13-Pro/"
+    },
+    {
+        "id":4,
+        "imagem":"images/destaque_compactador.png",
+        "nome":"Compactador para arquivos .txt",
+        "descricao":"Compactador e descompactador de Arquivos no formato .txt, usando o algoritmo de huffman",
+        "categorias":["C++","Backend"],
+        "link":"compactador.html"
+    }
+    
+]
+}
