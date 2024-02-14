@@ -4,7 +4,7 @@
         "imagem":"images/destaque_circuito_carregamento_pilha.png",
         "nome":"Circuito eletrônico para carregamento de pilhas de lítio",
         "descricao":"Criar um circuito eficiente para carregar pilhas de lítio com solução compacta e integrada.",
-        "categorias":["eletrônica"],
+        "categorias":["Eletrônica"],
         "link":"circuito_carregamento_pilha_de_litio.html"
     },
     {
@@ -31,6 +31,7 @@
         "categorias":["C++","Backend"],
         "link":"compactador.html"
     }
+    
     
 ]
 }

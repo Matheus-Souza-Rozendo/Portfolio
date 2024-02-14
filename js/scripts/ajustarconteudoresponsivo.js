@@ -1,20 +1,22 @@
-function ajustarConteudo(){
+function ajustarConteudoResponsivo(){
     // Seleciona o elemento a ser observado
-    var elementoObservado = document.getElementById("observado");
+    var elementoObservado = document.getElementById("navbarNav");
     var main = document.getElementsByTagName("main");
+    console.log(main[0],elementoObservado);
     // Cria um MutationObserver com uma função de callback
     var observer = new MutationObserver(function(mutations) {
         mutations.forEach(function(mutation) {
             if (mutation.attributeName === "class") {
-                if(main[0].classList.contains("abaixado")){
-                    main[0].classList.remove("abaixado");
-                    main[0].style.marginTop  = "0px";
+                if(main[0].classList.contains("abaixado-responsivo")){
+                    main[0].classList.remove("abaixado-responsivo");
+                    altura = main[0].getAttribute("altura");
+                    main[0].style.marginTop  = altura.toString()+"px";
                 }else{
                     var alturaNav = elementoObservado.offsetHeight;
-                    main[0].setAttribute("altura",alturaNav);
-                    main[0].style.marginTop  = alturaNav.toString()+"px";
-                    main[0].classList.add("abaixado");
-                    console.log("não responsivo",main[0]);
+                    altura = main[0].getAttribute("altura");
+                    altura = altura + alturaNav;
+                    main[0].style.marginTop  = altura.toString()+"px";
+                    main[0].classList.add("abaixado-responsivo");
                 }
             }
         });
@@ -28,7 +30,5 @@ function ajustarConteudo(){
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    ajustarConteudo();
+    ajustarConteudoResponsivo();
 });
-
-
