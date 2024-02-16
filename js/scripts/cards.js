@@ -21,6 +21,7 @@ async function inserirCard(Projeto){
     // Container do card
     const cardContainer = document.createElement('div');
     cardContainer.classList.add('card-custom');
+    cardContainer.setAttribute('categorias', Projeto.categorias.toString());
 
     // Imagem do card
     const cardImagem = document.createElement('img');

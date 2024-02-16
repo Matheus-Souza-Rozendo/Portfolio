@@ -28,7 +28,7 @@ select {
 }
 #filtro{
     padding:20px;
-    padding-bottom: 30px;
+    padding-bottom: 5px;
     background-color: #212529;
     position: fixed;
     width: 100%; 
@@ -147,6 +147,15 @@ select {
 .botao-moderno:hover {
     background-color: rgb(100,100,100); /* Cor de fundo ao passar o mouse */
     color: white;
+}
+
+.botao-moderno:focus{
+    background-color: black !important; /* Cor de fundo */
+    color: white !important; /* Cor do texto */
+}
+
+main{
+    transition: margin-top 0.5s; /* Efeito de transição de cor de fundo */
 }
 
 @media (max-width: 575px) {

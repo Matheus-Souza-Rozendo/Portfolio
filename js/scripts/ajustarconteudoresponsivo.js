@@ -2,7 +2,6 @@ function ajustarConteudoResponsivo(){
     // Seleciona o elemento a ser observado
     var elementoObservado = document.getElementById("navbarNav");
     var main = document.getElementsByTagName("main");
-    console.log(main[0],elementoObservado);
     // Cria um MutationObserver com uma função de callback
     var observer = new MutationObserver(function(mutations) {
         mutations.forEach(function(mutation) {

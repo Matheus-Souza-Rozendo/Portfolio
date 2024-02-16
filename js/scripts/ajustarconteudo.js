@@ -14,7 +14,7 @@ function ajustarConteudo(){
                     main[0].setAttribute("altura",alturaNav);
                     main[0].style.marginTop  = alturaNav.toString()+"px";
                     main[0].classList.add("abaixado");
-                    console.log("não responsivo",main[0]);
+                    
                 }
             }
         });
