@@ -69,9 +69,9 @@ function criarNavbar() {
     downloadDiv.className = "mt-lg-0 mt-3 mb-4 mb-lg-0";
 
     var downloadLink = document.createElement("a");
-    downloadLink.href = "#"; 
+    downloadLink.href = "CV-Matheus-Souza-Rozendo.pdf"; 
     downloadLink.className = "custom-btn btn";
-    downloadLink.download = true;
+    downloadLink.download = "CV-Matheus-Souza-Rozendo";
     downloadLink.style.color = "red";
     downloadLink.textContent = "Download CV";
 
