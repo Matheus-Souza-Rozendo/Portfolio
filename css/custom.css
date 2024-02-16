@@ -158,10 +158,26 @@ main{
     transition: margin-top 0.5s; /* Efeito de transição de cor de fundo */
 }
 
+#cards{
+    padding-top: 200px;
+    display: flex;
+    flex-flow: wrap; 
+    justify-content: space-around; 
+    position: relative;
+}
+
 @media (max-width: 575px) {
     /* Adicione uma regra de mídia para telas menores que 768px */
     .form-group{
         margin-bottom:0px !important;
+    }
+
+}
+
+@media (max-width: 425px) {
+    /* Adicione uma regra de mídia para telas menores que 768px */
+    #cards{
+        padding-top: 100px;
     }
 
 }

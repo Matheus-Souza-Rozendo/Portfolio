@@ -8,7 +8,6 @@ function filtrar(){
     var value = multiCheckbox.value;
 
     var vetorValores = value.split(',');
-    console.log(vetorValores);
     var cards= document.getElementsByClassName('card-custom')
     if(vetorValores[0]==""){
         for(let index=0;index<cards.length;index++){
@@ -17,7 +16,6 @@ function filtrar(){
     }else{
         for(let index=0;index<cards.length;index++){
             categorias = cards[index].getAttribute('categorias').split(',');
-            console.log("elemento testado:",cards[index]);
             if(testarCard(vetorValores,categorias)){
                 cards[index].style.display="block";
             }else{
@@ -31,9 +29,9 @@ function filtrar(){
 function testarCard(Selecionados,Categorias){
     for(let i=0;i<Selecionados.length;i++){
         for(let j=0;j<Categorias.length;j++){
-            console.log("Selecionados:",Selecionados[i],"Categorias:",Categorias[j]);
+          
             if(Selecionados[i]==Categorias[j]){
-                console.log("true");
+                
                 return true;
             }
         }

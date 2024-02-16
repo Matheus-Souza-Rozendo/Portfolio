@@ -618,3 +618,10 @@ https://www.tooplate.com/view/2120-ben-resume
       padding: 0.3rem 2rem 0.6rem 2rem;
     }
   }
+
+  @media screen and (max-width: 375px) {
+
+    .navbar-brand{
+      font-size: 30px;
+    }
+  }

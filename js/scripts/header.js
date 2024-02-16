@@ -35,7 +35,7 @@ function criarNavbar() {
 
     var menuItems;
 
-    if(tituloDaPagina!="Matheus Souza Rozendo - Amante de Tecnologia"){
+    if(tituloDaPagina=="Matheus Souza Rozendo - Amante de Tecnologia"){
         menuItems = [
             { href: "#intro", text: "Introdução" },
             { href: "#about", text: "Sobre Mim" },

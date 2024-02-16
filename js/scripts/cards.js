@@ -1,4 +1,4 @@
-let container = document.getElementById("cards");
+let container;
 
 async function consumirAPI() {
     try {
@@ -22,6 +22,7 @@ async function inserirCard(Projeto){
     const cardContainer = document.createElement('div');
     cardContainer.classList.add('card-custom');
     cardContainer.setAttribute('categorias', Projeto.categorias.toString());
+
 
     // Imagem do card
     const cardImagem = document.createElement('img');
@@ -91,6 +92,7 @@ async function inserirCard(Projeto){
 }
 
 async function gerarCards() {
+    container = document.getElementById("cards");
     dados = await consumirAPI();
     if (dados && dados.Projetos) {
         dados.Projetos.forEach((projeto) => {
