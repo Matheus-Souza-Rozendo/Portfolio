@@ -624,4 +624,12 @@ https://www.tooplate.com/view/2120-ben-resume
     .navbar-brand{
       font-size: 30px;
     }
+    .hero-title {
+      font-size: 22px;
+    }
+
+    .email-link {
+      font-size: 16px;
+      padding: 0.3rem 2rem 0.6rem 2rem;
+    }
   }
