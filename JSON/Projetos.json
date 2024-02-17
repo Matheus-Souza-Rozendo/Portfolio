@@ -20,7 +20,7 @@
         "imagem":"images/destaque_iphone.png",
         "nome":"Landing Page Iphone 13 Pro",
         "descricao":"Landing Page conceitual para o Iphone 13 Pro",
-        "categorias":["FrontEnd","javascript"],
+        "categorias":["FrontEnd","Javascript"],
         "link":"https://matheus-souza-rozendo.github.io/Landing-Page-Iphone-13-Pro/"
     },
     {
@@ -30,7 +30,55 @@
         "descricao":"Compactador e descompactador de Arquivos no formato .txt, usando o algoritmo de huffman",
         "categorias":["C++","Backend"],
         "link":"compactador.html"
-    }
+    },
+    {
+        "id":9,
+        "imagem":"images/destaque_formulario.png",
+        "nome":"Biblioteca de Formularios",
+        "descricao":"Uma Biblioteca de formulários pronta para ser usada, com validação front-end inclusa",
+        "categorias":["FrontEnd","Javascript"],
+        "link":"https://matheus-souza-rozendo.github.io/bibliotecas_formularios"
+    },
+    {
+        "id":5,
+        "imagem":"images/destaque_relogio.png",
+        "nome":"Relógio",
+        "descricao":"Relógio digital interativo e cronômetro, venha e nunca mais perca a hora",
+        "categorias":["FrontEnd","Javascript"],
+        "link":"https://matheus-souza-rozendo.github.io/relogio/"
+    },
+    {
+        "id":7,
+        "imagem":"images/destaque_jogo_da_velha.png",
+        "nome":"Jogo da Velha",
+        "descricao":"Jogo da Velha, jogo contra IA ou multiplayer",
+        "categorias":["FrontEnd","Javascript"],
+        "link":"https://matheus-souza-rozendo.github.io/jogodavelha/"
+    },
+    {
+        "id":8,
+        "imagem":"images/destaque_marsboot.png",
+        "nome":"Marsbot",
+        "descricao":"Desenho criado usando assembly da arquitetura mips",
+        "categorias":["Embarcados"],
+        "link":"marsbot.html"  
+    },
+    {
+        "id":6,
+        "imagem":"images/destaque_cores.png",
+        "nome":"Gerador de Cores Aleatórias",
+        "descricao":"Gerador de cores aleatórias no formato RGB",
+        "categorias":["FrontEnd","Javascript"],
+        "link":"https://matheus-souza-rozendo.github.io/cores-aleatorias/"        
+    },
+    {
+        "id":10,
+        "imagem":"images/destaque_matriz.png",
+        "nome":"Calculadora de Determinantes em C++",
+        "descricao":"Calculadora de Determinantes em C++",
+        "categorias":["C++"],
+        "link":"determinantes.html"  
+    }  
     
     
 ]
