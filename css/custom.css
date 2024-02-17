@@ -33,7 +33,7 @@ select {
     position: fixed;
     width: 100%; 
     min-height: max-content;
-    z-index: 2000;
+    z-index: 1;
 }
 
 

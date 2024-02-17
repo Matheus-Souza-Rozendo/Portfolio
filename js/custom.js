@@ -7,6 +7,7 @@
         $(".navbar-collapse").collapse('hide');
     });
 
+    if (document.title !== 'Projetos'){
     $(window).on('scroll', function() {     
                                 
         /*----------------------------------------------------*/
@@ -20,7 +21,7 @@
         } else {
             $(".navbar").removeClass("scroll");
         }               
-    });
+    });}
 
     // TESTIMONIALS CAROUSEL
     $('#testimonials-carousel').owlCarousel({

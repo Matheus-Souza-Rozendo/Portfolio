@@ -2,8 +2,13 @@ function criarNavbar() {
     var tituloDaPagina = document.title;
     // Criação dos elementos
     var nav = document.createElement("nav");
-    nav.className = "navbar navbar-expand-lg";
     nav.id = "observado";
+
+    if(tituloDaPagina=="Projetos"){
+        nav.className = "navbar navbar-expand-lg scroll";
+    }else{
+        nav.className = "navbar navbar-expand-lg";
+    }
 
     var container = document.createElement("div");
     container.className = "container";

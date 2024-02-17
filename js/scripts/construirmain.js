@@ -3,6 +3,7 @@ function construirmain() {
     var mainElement = document.createElement('main');
     mainElement.classList.add('container-fluid');
     mainElement.style.minHeight = '100vh';
+    mainElement.style.marginTop = "71px";
 
     // Criar o elemento div com a classe row e id filtro
     var rowElement = document.createElement('div');
